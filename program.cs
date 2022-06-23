@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 					
@@ -49,6 +49,14 @@ public class Program
         };
         numero resultado = (numero)Auxiliar.SomaTudo(numeros);
         Console.WriteLine(resultado.teste);
+
+         List<ISomavel> herois = new List<ISomavel>() {
+            new Heroi(100, 100),
+            new Heroi(50, 300),
+            new Heroi(10, 1000),
+        };
+        Heroi megazord = (Heroi)Auxiliar.SomaTudo(herois);
+        Console.WriteLine(megazord);
         
     }
 }
